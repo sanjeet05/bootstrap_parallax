@@ -16,7 +16,8 @@ html, body {
   text-align: center;
   vertical-align: middle;
 }
-.vcenter{margin-top: 30%;}
+
+.vcenter{margin-top: 25%; text-align: center;}
 .custom_heading {
   font-size: 4.5em;
   font-weight: 700;
@@ -28,7 +29,7 @@ html, body {
 #home {
   background: url(../images/home.jpg) no-repeat center center fixed;
   display: table;
-  height: 80%;
+  height: 100%;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -68,16 +69,6 @@ html, body {
   background-size: cover;
 }
 .custom_panel { opacity: 0.85;}
+#help{ background: #3caa7c !important; color: #fff;}
 
-
-
-footer {
-  padding: 20px 0;
-}
-footer .glyphicon {
-  color: #333333;
-  font-size: 60px;
-}
-footer .glyphicon:hover {
-  color: #306d9f;
-}
+#footer {padding: 20px 0; background: #2e3c54 !important; color: #fff;}

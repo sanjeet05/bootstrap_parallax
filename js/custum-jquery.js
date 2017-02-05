@@ -8,6 +8,15 @@ $(document).ready(function(){
         return { top: 1 - $('.nav_height').height(), left:0 };
     }
   });
+  $('#home').localScroll({
+    hash:true,
+    duration: 1000,
+    offset: function() {
+        return { top: 1 - $('.nav_height').height(), left:0 };
+    }
+  });
+
+
   // $('#nav').localScroll({
   //   hash:true,
   //   duration: 1000,
@@ -19,7 +28,7 @@ $(document).ready(function(){
   var hash = window.location.hash;
   hash && $('ul.nav a[href="' + hash + '"]').tab('show');
   //  for current click
-  $('a[href^="#"]').on('click', function (e) {
+  $('li a[href^="#"]').on('click', function (e) {
       e.preventDefault();
       $('a').each(function () {
           $(this).parent().removeClass('active');
